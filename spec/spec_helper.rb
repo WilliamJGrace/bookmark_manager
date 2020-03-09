@@ -19,7 +19,7 @@ require 'capybara/rspec'
 require 'rspec'
 # require 'feature/web_helpers'
 
-Capybara.app = Bookmark
+Capybara.app = Bookmark_manager
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
