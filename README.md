@@ -7,3 +7,4 @@ I would like to see a list of bookmarks
 ```
 
 ## Domain Model
+![Domain Model](./public/domainmodel.png)
