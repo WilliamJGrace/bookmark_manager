@@ -1,0 +1,14 @@
+feature 'Add Bookmarks' do
+  scenario 'User can add bookmarks' do
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
+
+    # Add the test data
+
+    visit ('/bookmarks/new')
+      fill_in('url', with: 'www.bing.com')
+      # fill_in('name', with: 'bing')
+      click_button 'Submit'
+
+      expect(page).to have_content "www.bing.com"
+  end
+end
