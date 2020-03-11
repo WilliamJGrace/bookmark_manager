@@ -5,10 +5,10 @@ feature 'Add Bookmarks' do
     # Add the test data
 
     visit ('/bookmarks/new')
-      fill_in('url', with: 'www.bing.com')
+      fill_in('url', with: 'https://www.bing.com')
       fill_in('title', with: 'bing')
       click_button 'Submit'
 
-      expect(page).to have_link('bing', href: "www.bing.com")
+      expect(page).to have_link('bing', href: "https://www.bing.com")
   end
 end
