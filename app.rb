@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require './lib/bookmark'
+require './database_connection_setup'
+
 
 class Bookmark_manager < Sinatra::Base
   enable :sessions, :method_override
