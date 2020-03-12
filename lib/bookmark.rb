@@ -33,6 +33,13 @@ class Bookmark
     DatabaseConnection.query("UPDATE bookmarks SET title = '#{title}', url = '#{url}' WHERE id = #{id}")
   end
 
+  def self.find(id:)
+    result = DatabaseConnection.query("SELECT * FROM bookmarks WHERE id = #{id};")
+    Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
+  end
+
+
+
   private
 
   def self.is_url?(url)
