@@ -1,0 +1,8 @@
+<h1>Comment on your bookmark</h1>
+
+
+<form action="/bookmarks/<%= @bookmark.id %>/comments" method="POST">
+  <p><%= @bookmark.title %></p>
+  <input name="comment" type="text" />
+  <input value="Submit" type="submit" />
+</form>
